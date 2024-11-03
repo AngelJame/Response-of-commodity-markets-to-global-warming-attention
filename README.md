@@ -39,12 +39,11 @@ The calculation of the commodity market uncertainty (UNC) involves two steps. Th
 #### Stochastic Volatility model  
 
 (1) `day_idd.csv` is the return result of `gdfm_onesided.m` program.
-(2) `Uncertainty.R` file is an R language program 
-in the SV codebase in RStudio and import the commodity market return residual data saved in the previous step to obtain the daily commodity uncertainty.
-4. Filter the daily commodity uncertainty index every Friday as the weekly commodity uncertainty index.
+(2) `Uncertainty.R` file is an R language program, using Monte Carlo method to obtain commodity market uncertainty index.  
     
 ### GMM-PVAR model  
-(1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the Stata software.     
+(1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the **Stata software**.     
 
-(2) `GMM-PVAR`   
+(2) `GMM-PVAR` is a Stata program, which is also the key program for this paper. We can obtain shocks of global warming attention to commodity market (see Fig. 3-8 in Paper), responses of commodity markets to global warming attention shocks introducing control variables (see Fig. 9), responses of commodity markets to global abnormal temperature shocks (see Fig. 11-12), and responses of commodity markets to ten topics colsely to global warming (see Supplementary Figure S2-S11).   
 
+(3) `PVAR for commodtiy markets.dta`, `PVAR for the agricultural market.dta`, `PVAR for the fossil energy market.dta`, `PVAR for the livestock market.dta`, `PVAR for the metal market.dta` are 
