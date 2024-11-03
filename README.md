@@ -48,7 +48,8 @@ The calculation of the commodity market uncertainty (UNC) involves two steps. Th
 
 (3) `PVAR for commodtiy markets.dta`, `PVAR for the agricultural market.dta`, `PVAR for the fossil energy market.dta`, `PVAR for the livestock market.dta`, `PVAR for the metal market.dta` are data for `GMM-PVAR`, which are compiled from `/Data/Commodity weekly prices.xlsx`, `Global abnormal weekly temperature.xlsx`, `Global warming attention index.xlsx`, `Global warming attention index.xlsx`, `Weekly control variables.xlsx`, volatility data calculated by `/Code/Volatility calculation/Volatility Calculation.R`, and market uncertainty data calculated by bulk programs in `/Code/Market uncertainty calculation code/`.  
 
-  ### Fixed-effects ordinary least squares estimation of panel vector autoregression model   
+### Fixed-effects ordinary least squares estimation of panel vector autoregression model   
 
-(1) `Data for PVAR_FEOLS.csv` is 
-  
+(1) `Data for PVAR_FEOLS.csv` is the commodity markets data for `PVAR_FEOLS.R`, including Commodity names (newid), Time (newtime), the first difference of global warming attention (DSVI), the returns of commodity (RET), the volatility of commodity (VOL), the first difference of commdity markets uncertainty (DUNC). RET, VOL and DUNC are compiled from `/Code/GMM-PVAR model/PVAR for commodity markets.dta`.  
+
+(2) `PVAR_FEOLS.R` is an R Language program to obtain responses of the commodity markets to global warming attention shocks analysed using FEOLS-PVAR (see Fig. 13 in paper).
