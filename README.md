@@ -1,5 +1,4 @@
-# <p align="center">Response of commodity markets to global warming attention</p>
-## <p align="center">Data and Code for "Response of commodity markets to global warming attention"</p>
+# <p align="center">Data and Code for "Response of commodity markets to global warming attention"</p>
 ## 1.Data
   
 (1) `Commodity daily prices.xlsx` records daily prices of 23 commodities including Cocco, Coffee, Corn, etc. from *Datastream database*.  
