@@ -1,6 +1,6 @@
-# Response of commodity markets to global warming attention
+# <p align="center">Response of commodity markets to global warming attention</p>
 
-## Data
+## 1.Data
   
 (1) `Commodity daily prices.xlsx` records daily prices of 23 commodities including Cocco, Coffee, Corn, etc. from *Datastream database*.  
   
@@ -14,7 +14,9 @@
 
 (6) `Weekly control variables.xlsx` records weekly data of four control variables, including Economic Policy Uncertainty Index (gepu), the Index of Global Real Economic Activity (igrea), nominal exchange rate index (exchange), and the Geopolitical Risk Index (gpr).  
 
-## Code  
+## 2.Code    
+### Volatility calculation  
+(1) `Volatility Calculation.R`
 ### GMM-PVAR model  
 (1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the Stata software.     
 
