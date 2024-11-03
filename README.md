@@ -34,10 +34,15 @@ The calculation of the commodity market uncertainty (UNC) involves two steps. Th
 
 (4) Thirdly, `Launch.m` is used to obtain the optimal number of static factors. We set threshold kmax as 10, and the number of static factors is determined to be 5 based on the PC1 or PC2 information criteria.   
 
-(5) Finally, we use `gdfm_onesided.m` (setting the number of dynamic factors to 1 and the number of static factors to 5), to obtain the residual series of returns for each commodities by removing the effects of predictable factors on daily commodity returns.  
+(5) Finally, we use `gdfm_onesided.m` (setting the number of dynamic factors to 1 and the number of static factors to 5), to obtain the residual series of returns of commodities by removing the effects of predictable factors on daily commodity returns.  
 
 #### Stochastic Volatility model  
-  
+
+(1) `day_idd.csv` is the return result of `gdfm_onesided.m` program.
+(2) `Uncertainty.R` file is an R language program 
+in the SV codebase in RStudio and import the commodity market return residual data saved in the previous step to obtain the daily commodity uncertainty.
+4. Filter the daily commodity uncertainty index every Friday as the weekly commodity uncertainty index.
+    
 ### GMM-PVAR model  
 (1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the Stata software.     
 
