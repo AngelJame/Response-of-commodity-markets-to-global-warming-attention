@@ -32,7 +32,9 @@ The calculation of the commodity market uncertainty (UNC) involves two steps. Th
 (3) Secondly, `numfactors.m` is used to obtain the relationship (see the following figure) between the number of dynamic factors and information criteria by setting the threshold value of q_max=10, and using the default settings for the rest of parameters. The q-value (red curve) corresponding to the second interval where Sc (blue curve) is 0 is the optimal number of dynamic factors. Therefore, the optimal number of dynamic factors is 1 in this work. 
 ![image](https://github.com/user-attachments/assets/5ca8a9ee-d56f-4b93-9cc8-b208b82909f2)    
 
-(4) Thirdly, `Launch.m` is used to obtain the optimal number of static factors. We set threshold kmax as 10, and the number of static factors is determined to be 5 based on the PC1 or PC2 information criteria.  
+(4) Thirdly, `Launch.m` is used to obtain the optimal number of static factors. We set threshold kmax as 10, and the number of static factors is determined to be 5 based on the PC1 or PC2 information criteria.   
+
+(5) Finally, we use `gdfm_onesided.m` (setting the number of dynamic factors to 1 and the number of static factors to 5), to obtain the residual series of returns for each commodities by removing the effects of predictable factors on daily commodity returns.  
 
 #### Stochastic Volatility model  
   
