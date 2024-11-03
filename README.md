@@ -3,7 +3,7 @@
   
 (1) `Commodity daily prices.xlsx` records daily prices of 23 commodities including Cocco, Coffee, Corn, etc. from *Datastream database*.  
   
-(2) `Commdity weekly prices.xlsx` records weekly price data for commodities, which is composed by filtering daily prices every Friday from `Commdity daily prices.xlsx`. The return of commodity markets in the papers' Table 2 are calculated based on this data through equation (2)。  
+(2) `Commdity weekly prices.xlsx` records weekly price data for commodities, which is composed by filtering daily prices every Friday from `Commdity daily prices.xlsx`. The returns of commodities in the papers' Table 2 are calculated based on this data through papers' equation (2)。  
 
 (3) `Global abnormal attention index.xlsx` records the global abnormal surface temperature from *Berkeley Earth Temperature (https://berkeleyearth.org/data/)*.  
 
