@@ -40,9 +40,15 @@ The calculation of the commodity market uncertainty (UNC) involves two steps. Th
 (1) `day_idd.csv` is the return result of `gdfm_onesided.m` program.
 (2) `Uncertainty.R` file is an R language program, using Monte Carlo method to obtain commodity market uncertainty index.  
     
-### GMM-PVAR model  
+### GMM-PVAR model    
+
 (1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the **Stata software**.     
 
 (2) `GMM-PVAR` is a Stata program, which is also the key program for this paper. We can obtain shocks of global warming attention to commodity market (see Fig. 3-8 in Paper), responses of commodity markets to global warming attention shocks introducing control variables (see Fig. 9), responses of commodity markets to global abnormal temperature shocks (see Fig. 11-12), and responses of commodity markets to ten topics colsely to global warming (see Supplementary Figure S2-S11).   
 
-(3) `PVAR for commodtiy markets.dta`, `PVAR for the agricultural market.dta`, `PVAR for the fossil energy market.dta`, `PVAR for the livestock market.dta`, `PVAR for the metal market.dta` are data for `GMM-PVAR`, which are compiled from `/Data/Commodity weekly prices.xlsx`, `Global abnormal weekly temperature.xlsx`, `Global warming attention index.xlsx`, `Global warming attention index.xlsx`, `Weekly control variables.xlsx`, volatility data calculated by `/Code/Volatility calculation/Volatility Calculation.R`, and market uncertainty data calculated by bulk programs in `/Code/Market uncertainty calculation code/`.
+(3) `PVAR for commodtiy markets.dta`, `PVAR for the agricultural market.dta`, `PVAR for the fossil energy market.dta`, `PVAR for the livestock market.dta`, `PVAR for the metal market.dta` are data for `GMM-PVAR`, which are compiled from `/Data/Commodity weekly prices.xlsx`, `Global abnormal weekly temperature.xlsx`, `Global warming attention index.xlsx`, `Global warming attention index.xlsx`, `Weekly control variables.xlsx`, volatility data calculated by `/Code/Volatility calculation/Volatility Calculation.R`, and market uncertainty data calculated by bulk programs in `/Code/Market uncertainty calculation code/`.  
+
+  ### Fixed-effects ordinary least squares estimation of panel vector autoregression model   
+
+(1) `Data for PVAR_FEOLS.csv` is 
+  
