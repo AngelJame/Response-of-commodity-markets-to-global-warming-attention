@@ -16,3 +16,7 @@
 
 ## Code  
 ### GMM-PVAR model  
+(1) `pvar2014.zip` is the necessary Stata package to implement the GMM-PVAR model. We need to download and extract it to the installation directory of the Stata software.     
+
+(2) `GMM-PVAR`   
+
