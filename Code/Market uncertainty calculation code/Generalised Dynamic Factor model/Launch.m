@@ -1,1 +1,0 @@
-results=NbFactors(dayreturn,10);
